@@ -58,7 +58,7 @@ body {
   display: flex;
   color: white;
   justify-content: space-between;
-  padding: 16px 0;
+  padding: 16px 8px;
   width: 1148px;
   height: 42px;
   align-items: center;
@@ -117,6 +117,10 @@ font-weight: 500;
   align-items: center;
 }
 
+.text-center{
+  text-align: center;
+}
+
 .text-white{
   color: white;
 }
@@ -136,6 +140,10 @@ font-weight: 500;
   color:#FFD736
 }
 
+.text-safe{
+  color:#89DBFF;
+}
+
 .bg-primary{
   background: #5F24D9;
 }
@@ -150,9 +158,17 @@ font-weight: 500;
 
 }
 
+.bg-safe{
+  background: #89DBFF;
+}
+
 .bg-white{
   background:white !important;
 
+}
+
+.bg-black{
+  background: black;
 }
 
 .bg-transparent{
@@ -420,6 +436,16 @@ font-weight: 500;
 
 
 
+.w-100{
+  width: 100%;
+}
+
+.h-100{
+  height: 100%;
+}
+
+
+
 .line {
   display: flex;
   width: 20px;
@@ -441,5 +467,33 @@ font-weight: 500;
   .input:focus{
     box-shadow:0 0  0 2px #5F24D9 ;
   }
+
+  a{
+    text-decoration: none;
+  }
+
+
+@media only screen and (max-width: 1160px) {
+.navbar{
+  width: 100%;
+}
+.navbar-route{
+  display:none;
+}
+
+.container{
+   max-width: 80%;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+
+.container{
+   max-width: 90%;
+}
+
+}
+
 
 </style>

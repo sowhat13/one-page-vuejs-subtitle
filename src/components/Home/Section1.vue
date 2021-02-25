@@ -1,6 +1,6 @@
 <template>
   <div class="what-is container">
-    <img class="section-svg" src="../../assets/svg/section-1.svg" />
+    <img class="section-svg section-1-svg-1" src="../../assets/svg/section-1.svg" />
 
 <div class="flex flex-col section-text">
 
@@ -21,6 +21,9 @@ Subbedd is a low-cost, very accurate subtitling service. We use real translators
 <button class="button bg-primary text-white mt-3">Contact Us</button>
 
 </div>
+
+    <img class="section-svg section-1-svg-2" src="../../assets/svg/section-1.svg" />
+
 
   </div>
 </template>
@@ -49,6 +52,39 @@ export default {
 
 .section-text{
     width: 45%;
+}
+
+
+.section-1-svg-2{
+  display:none;
+
+}
+
+
+
+@media only screen and (max-width: 1160px) {
+.what-is{
+  flex-direction: column;
+}
+
+.section-text{
+  display:flex;
+  width: 100% !important;
+}
+
+.section-1-svg-1{
+display: none;
+
+}
+
+.section-1-svg-2{
+  display:flex;
+  width: 90% !important;
+  margin: 1rem auto;
+
+}
+
+
 }
 
 </style>

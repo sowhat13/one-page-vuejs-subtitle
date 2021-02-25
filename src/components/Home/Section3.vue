@@ -1,6 +1,6 @@
 <template>
   <div class="what-is container">
-    <img class="section-svg" src="../../assets/svg/section-3.svg" />
+    <img class="section-svg section-3-svg-1" src="../../assets/svg/section-3.svg" />
 
 <div class="flex flex-col section-text">
 
@@ -28,6 +28,8 @@ We are getting so excited when getting new videos. Share your video via <span cl
 
 </div>
 
+
+ <img class="section-svg section-3-svg-2" src="../../assets/svg/section-3.svg" />
   </div>
 </template>
 
@@ -68,4 +70,37 @@ export default {
     width: 50%;
 }
 
+.section-3-svg-2{
+  display:none;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1160px) {
+.what-is{
+  flex-direction: column;
+}
+
+.section-text{
+  display:flex;
+  width: 100% !important;
+}
+
+.section-3-svg-1{
+display: none;
+
+}
+
+.section-3-svg-2{
+  display:flex;
+  width: 90% !important;
+  margin: 1rem auto;
+
+}
+
+
+}
 </style>

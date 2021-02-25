@@ -85,12 +85,12 @@ document.addEventListener("DOMContentLoaded", initYouTubeVideos);
 
 <template>
   <div class="welcome container">
-      <span class="mt-6 font-md font-800 flex justify-center text-secondary">
+      <span class="mt-6 font-md font-800 flex justify-center text-secondary text-center">
 DISCOVER THE WORLD FOR FREE !
 
       </span>
 
-      <span class="mt-3 font-xl font-800 flex justify-center">
+      <span class="mt-3 font-xl font-800 flex justify-center text-center">
 
           Browse videos globally to watch in your language.
       </span>
@@ -108,8 +108,9 @@ DISCOVER THE WORLD FOR FREE !
       
 
   </div>
-  <div class="normal-tv">
-    <img src="../../assets/svg/normal-tv-yellow.svg" />
+  <div class="normal-tv ">
+<div class="tv-gif1"></div>
+    <img class="normal-tv-wrap" src="../../assets/svg/normal-tv-yellow.svg" />
 
 
   </div>
@@ -128,8 +129,11 @@ DISCOVER THE WORLD FOR FREE !
       
 
   </div>
-  <div class="normal-tv">
-    <img src="../../assets/svg/normal-tv-blue.svg" />
+  <div class="normal-tv ">
+<div class="tv-gif2"></div>
+
+       <img class="normal-tv-wrap" src="../../assets/svg/normal-tv-blue.svg" />
+
 
 
   </div>
@@ -160,8 +164,10 @@ DISCOVER THE WORLD FOR FREE !
       
 
   </div>
-  <div class="normal-tv">
-    <img src="../../assets/svg/normal-tv-blue.svg" />
+  <div class="normal-tv ">
+<div class="tv-gif3"></div>
+
+        <img class="normal-tv-wrap" src="../../assets/svg/normal-tv-blue.svg" />
 
 
   </div>
@@ -180,8 +186,11 @@ DISCOVER THE WORLD FOR FREE !
       
 
   </div>
-  <div class="normal-tv">
-    <img src="../../assets/svg/normal-tv-yellow.svg" />
+  <div class="normal-tv ">
+<div class="tv-gif4"></div>
+
+    <img class="normal-tv-wrap" src="../../assets/svg/normal-tv-yellow.svg" />
+
 
 
   </div>
@@ -277,7 +286,16 @@ left:calc(50% - 36px);
 
 .small-tv2 { grid-area: small-tv2; }
 
-.normal-tv { grid-area: normal-tv; }
+.normal-tv { grid-area: normal-tv; 
+position: relative;
+
+}
+
+.normal-tv-wrap{
+  position: absolute;
+z-index: 1;
+
+}
 
 .subtitle-suprise{
     width: 272px;
@@ -285,4 +303,107 @@ left:calc(50% - 36px);
     left: 50%;
 }
 
+.tv-gif1{
+  background:url('https://media.giphy.com/media/QIabLW8w6BWU1RTqd3/giphy.gif');
+  background-repeat: no-repeat;
+  width: 182px ;
+  height: 120px;
+  position: absolute;
+  background-size: cover;
+z-index: 0;
+  border-radius: 16px;
+
+}
+
+.tv-gif2{
+    background:url('https://media.giphy.com/media/qJzPR90fB8qod6mWxJ/giphy.gif');
+  background-repeat: no-repeat;
+  width: 182px ;
+  height: 120px;
+  position: absolute;
+  background-size: cover;
+z-index: 0;
+  border-radius: 16px;
+
+}
+
+.tv-gif3{
+  background:url('https://media.giphy.com/media/eceAfd3KL993GCsayo/giphy.gif');
+  background-repeat: no-repeat;
+  width: 182px ;
+  height: 120px;
+  position: absolute;
+  background-size: cover;
+z-index: 0;
+  border-radius: 16px;
+
+}
+
+.tv-gif4{
+  background:url('https://media.giphy.com/media/4tBjRTBDV2f1JKrJVD/giphy.gif');
+   background-repeat: no-repeat;
+  width: 182px ;
+  height: 120px;
+  position: absolute;
+  background-size: cover;
+z-index: 0;
+  border-radius: 16px;
+}
+
+
+@media only screen and (max-width: 1160px) {
+.tv-units{
+display: flex;
+justify-content: center;
+}
+
+.tv-1{
+  display:none;
+}
+
+.tv-2{
+width: 90%;
+min-width: 320px;
+
+}
+
+.tv-3{
+  display:none;
+}
+
+.subtitle-suprise{
+    width: 250px;
+    position: relative;
+    left: 25%;
+}
+
+}
+
+@media only screen and (max-width: 640px) {
+.tv-units{
+display: flex;
+justify-content: center;
+}
+
+
+.tv-2{
+width: 100%;
+min-width: 320px;
+
+}
+
+
+.youtube-player{
+    padding: 0 ;
+ 
+
+}
+
+.subtitle-suprise{
+    width: 250px;
+    position: relative;
+    left: 25%;
+}
+
+}
 </style>
